@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React from CC
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  return <div className="course-info">
+    <h2>course list</h2>
+    <ul className="course-list">
+      <li>web</li>
+      <li>java</li>
+      <li>AI</li>
+    </ul>
+
+  </div>
+
+  // react
+  // return React.createElement('h1',{title:"xyz"},"Welcome to comp229");
+
+  // jsx
+  // return <h1 title="xyz">welcome to comp 229</h1>
+
+};
 
 export default App;
